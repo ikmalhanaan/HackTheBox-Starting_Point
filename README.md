@@ -6,9 +6,12 @@ A collection of detailed, professional walkthroughs and writeups for the **Start
 
 ## 📋 Completed Machines
 
+### Tier 0
+
 | # | Machine | Tier | OS | Difficulty | Primary Vector / Service | Walkthrough |
 |---|---|---|---|---|---|---|
-| 1 | **Fawn** | Tier 0 | Linux | Very Easy | vsftpd 3.0.3 — Anonymous Authentication | [Read Writeup](./HackTheBox%20-%20Fawn%20%28Starting%20Point%29.md) |
+| 1 | **Meow** | Tier 0 | Linux | Very Easy | Telnet (`Linux telnetd`) — Blank Root Password | [Read Writeup](./HackTheBox%20-%20Meow%20%28Starting%20Point%29.md) |
+| 2 | **Fawn** | Tier 0 | Linux | Very Easy | vsftpd 3.0.3 — Anonymous Authentication | [Read Writeup](./HackTheBox%20-%20Fawn%20%28Starting%20Point%29.md) |
 
 ---
 
@@ -16,9 +19,9 @@ A collection of detailed, professional walkthroughs and writeups for the **Start
 
 The walkthroughs in this repository emphasize standard penetration testing methodologies:
 
-1. **Reconnaissance & Port Scanning:** `nmap` (TCP SYN stealth scans, service detection, OS detection, NSE scripts).
+1. **Reconnaissance & Port Scanning:** `nmap` (TCP SYN stealth scans, all-ports sweeps, service detection, OS detection, NSE scripts).
 2. **Vulnerability Assessment:** Identifying misconfigurations, unauthenticated access points, and software CVEs.
-3. **Exploitation & Initial Access:** Interacting with vulnerable network services using native clients and exploitation tools.
+3. **Exploitation & Initial Access:** Interacting with vulnerable network services using native clients (`telnet`, `ftp`, etc.) and exploitation tools.
 4. **Post-Exploitation & Flag Capture:** Locating and exfiltrating target flags (`flag.txt`).
 5. **Remediation & Hardening:** Practical defensive guidance to mitigate identified vulnerabilities.
 
@@ -28,13 +31,17 @@ The walkthroughs in this repository emphasize standard penetration testing metho
 
 ```text
 .
-├── HackTheBox - Fawn (Starting Point).md  # Detailed Fawn walkthrough
+├── HackTheBox - Fawn (Starting Point).md  # Detailed Fawn walkthrough (FTP)
+├── HackTheBox - Meow (Starting Point).md  # Detailed Meow walkthrough (Telnet)
 ├── Image Asset/                          # Evidence screenshots and scan outputs
 │   ├── Pasted image 20260913212841.png
 │   ├── Pasted image 20260913212903.png
 │   ├── Pasted image 20260913213345.png
 │   ├── Pasted image 20260913213425.png
-│   └── Pasted image 20260913213556.png
+│   ├── Pasted image 20260913213556.png
+│   ├── Pasted image 20260916204338.png
+│   ├── Pasted image 20260916204412.png
+│   └── Pasted image 20260916204443.png
 ├── README.md                             # Repository index & summary
 └── .gitignore                            # Git ignore rules
 ```

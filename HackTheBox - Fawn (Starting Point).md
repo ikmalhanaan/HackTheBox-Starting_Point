@@ -173,3 +173,4 @@ To secure a `vsftpd` deployment:
 
 4. **Firewall & Network Segmentation:**
    Restrict port 21 access using host-based firewalls (`iptables`, `ufw`) to authorized internal IP addresses only.
+
